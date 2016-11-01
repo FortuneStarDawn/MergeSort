@@ -6,7 +6,7 @@ Output: the numbers in sorted order
 
 The sorting method is mergeSort.
 
-There are two version of mergeSort: Recursive and Non-recursive.
+There are two versions of mergeSort: Recursive and Non-recursive.
 
 The mergeSort function only need to get the set user want to sort,
 
