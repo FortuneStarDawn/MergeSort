@@ -4,7 +4,7 @@
 
 using namespace std;
 
-vector<int> mergeSort(vector<int> A);
+void mergeSort(vector<int> &A);
 
 int main()
 {
@@ -17,13 +17,13 @@ int main()
     ss<<line;
     while(ss>>element) A.push_back(element);
 
-    A = mergeSort(A);
+    mergeSort(A);
     for(int i=0; i<A.size(); i++) cout<<A.at(i)<<' ';
     cout<<endl;
     return 0;
 }
 
-vector<int> mergeSort(vector<int> A)
+void mergeSort(vector<int> &A)
 {
     int left, right, mid, end, now;
     vector<int> temp = A;
@@ -71,5 +71,4 @@ vector<int> mergeSort(vector<int> A)
         }
         A = temp;
     }
-    return A;
 }
